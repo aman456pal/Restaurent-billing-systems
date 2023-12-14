@@ -26,15 +26,13 @@
 
         h2 {
             text-align: center;
-            color: #e74c3c; /* Red color for headings */
+            color: #e74c3c; 
         }
-
-        /* Style for Login Section */
         #login-container {
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-            background-color: #313233; /* Blue color for login container */
+            background-color: #313233; 
             color: #585757;
             text-align: center;
         }
@@ -58,7 +56,7 @@
         }
 
         #login-form button {
-            background-color: #2ecc71; /* Green color for login button */
+            background-color: #2ecc71; 
             color: #fffafa;
             border: none;
             padding: 12px;
@@ -70,26 +68,20 @@
         #login-form button:hover {
             background-color: #27ae60;
         }
-
-        /* Style for Restaurant Section */
         #restaurant-container {
             display: none;
         }
-
-        /* Navigation Buttons */
         #navigation {
             display: flex;
             justify-content: space-around;
             margin-bottom: 20px;
         }
-
-        /* Style for Sections */
         .section {
             padding: 20px;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-bottom: 20px;
-            background-color: #ecf0f1; /* Light gray background for sections */
+            background-color: #ecf0f1; 
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             color: #333;
             transition: box-shadow 0.3s;
@@ -98,8 +90,6 @@
         .section:hover {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
-
-        /* Additional Styling for Forms and Lists */
         form label {
             margin-bottom: 8px;
             color: #333;
@@ -128,8 +118,6 @@
 <body>
     <div class="container">
         <h2>Restaurant Billing System</h2>
-
-        <!-- Login Section -->
         <div id="login-container">
             
             <h1 style="color: rgb(252, 38, 55);">Aman Restaurant</h1>
@@ -146,16 +134,12 @@
             </form>
         </div>
 
-        <!-- Restaurant Section -->
         <div id="restaurant-container">
-            <!-- Navigation Buttons -->
             <div id="navigation">
                 <button onclick="showSection('employees')">Employees</button>
                 <button onclick="showSection('menu')">Menu</button>
                 <button onclick="showSection('expenses')">Expenses</button>
             </div>
-
-            <!-- Employees Section -->
             <div id="employees-section" class="section" style="display:none;">
                 <h3>Employee Details</h3>
                 <form id="employee-form">
@@ -165,17 +149,11 @@
                     <input type="number" id="employee-salary" required>
                     <button type="button" onclick="addEmployee()">Add Employee</button>
                 </form>
-
-                <!-- Display Employees -->
                 <div id="employee-list"></div>
-
-                <!-- Display Total Salary -->
                 <div id="total-salary-container">
                     <p>Total Salary: $<span id="total-salary">0.00</span></p>
                 </div>
             </div>
-
-            <!-- Menu Section -->
             <div id="menu-section" class="section" style="display:none;">
                 <h3>Menu</h3>
                 <form id="menu-form">
@@ -188,19 +166,13 @@
                     <button type="button" onclick="addItem()">Add Item</button>
                 </form>
 
-                <!-- Display Menu Items -->
                 <div id="menu-list"></div>
-
-                <!-- Display Total Item Amount -->
                 <div id="total-item-amount-container">
                     <p>Total Item Amount (with GST): $<span id="total-item-amount">0.00</span></p>
                 </div>
-                <!-- Add this button inside the menu-section -->
                 <button onclick="printMenuSlip()">Print Slip</button>
 
             </div>
-
-            <!-- Expenses Section -->
             <div id="expenses-section" class="section" style="display:none;">
                 <h3>Other Expenses</h3>
                 <form id="expense-form">
@@ -210,11 +182,7 @@
                     <input type="number" id="expense-amount" required>
                     <button type="button" onclick="addExpense()">Add Expense</button>
                 </form>
-
-                <!-- Display Expenses -->
                 <div id="expense-list"></div>
-
-                <!-- Display Total Expenses -->
                 <div id="total-expenses-container">
                     <p>Total Expenses: $<span id="total-expenses">0.00</span></p>
                 </div>
